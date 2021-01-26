@@ -1,14 +1,12 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: "app-student",
   templateUrl: "./student.component.html",
-  styleUrls: ["./student.component.css"]
+  styleUrls: ["./student.component.css"],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
-export class StudentComponent implements OnInit {
+export class StudentComponent {
   title: String = "Student component works!";
-
   constructor() {}
-
-  ngOnInit() {}
 }
